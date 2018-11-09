@@ -24,7 +24,13 @@ public class ObjectToAL {
 				
 				while(sc.hasNextLine()){
 					String line = sc.nextLine();
-					Matches.add(line);
+					String[] word = line.split("::");
+					FootballMatch fmatch = new FootballMatch();
+					for (int x = 0; x < word.length; x++) {
+						fmatch.getLocalTeam
+						}
+					}
+						
 				}
 				
 				System.out.println(Matches);
