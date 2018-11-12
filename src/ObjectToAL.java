@@ -19,17 +19,24 @@ public class ObjectToAL {
 		else {
 
 			try {
+				
+				// File = Argument & enter the file in Scanner.
 				File file = new File(args[0]);
 				Scanner sc = new Scanner(file);
 				
 				while(sc.hasNextLine()) {
 					String line = sc.nextLine();
 					String[] word = line.split("::");
-					FootballMatch fmatch = new FootballMatch();				
+					
+					FootballMatch fmatch = new FootballMatch();	
+					
+					// Add variable per variable in a variable.
 					fmatch.setLocalTeam(word[0]);
 					fmatch.setVisitorTeam(word[1]);
 					fmatch.setGoalsLocal(Integer.parseInt(word[2]));
 					fmatch.setGoalsVisitor(Integer.parseInt(word[3]));
+					
+					// Add all variables in the ArrayList.
 					Matches.add(fmatch);
 					}
 						
@@ -39,10 +46,12 @@ public class ObjectToAL {
 				System.out.println("File not found...");
 				
 			}
-			
-			System.out.println(Matches);
+
 			System.out.println("There are " + Matches.size() + " matches in the ArrayList.");
 		
+			for (int x = 0; Matches.size() - 1 >= x; x++) {
+				System.out.println(Matches.get(x).getLocalTeam() + " " + Matches.get(x).getGoalsLocal() + " vs " + Matches.get(x).getVisitorTeam() + " " + Matches.get(x).getGoalsVisitor());
+			}
 		}
 	}
 }
