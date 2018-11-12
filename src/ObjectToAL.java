@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ObjectToAL {
 	public static void main(String[] args) {
 		
-		ArrayList<String> Matches = new ArrayList<String>();
+		ArrayList<FootballMatch> Matches = new ArrayList<FootballMatch>();
 		
 		if (args.length > 1 ) {
 			System.out.println("You enter more than one argument. Bye!");
@@ -22,25 +22,27 @@ public class ObjectToAL {
 				File file = new File(args[0]);
 				Scanner sc = new Scanner(file);
 				
-				while(sc.hasNextLine()){
+				while(sc.hasNextLine()) {
 					String line = sc.nextLine();
 					String[] word = line.split("::");
-					FootballMatch fmatch = new FootballMatch();
-					for (int x = 0; x < word.length; x++) {
-						fmatch.getLocalTeam
-						}
+					FootballMatch fmatch = new FootballMatch();				
+					fmatch.setLocalTeam(word[0]);
+					fmatch.setVisitorTeam(word[1]);
+					fmatch.setGoalsLocal(Integer.parseInt(word[2]));
+					fmatch.setGoalsVisitor(Integer.parseInt(word[3]));
+					Matches.add(fmatch);
 					}
 						
 				}
-				
-				System.out.println(Matches);
-				System.out.println("There are " + Matches.size() + " matches in the ArrayList.");
-				 
-			}
-			
+
 			catch (FileNotFoundException e) {
 				System.out.println("File not found...");
+				
 			}
+			
+			System.out.println(Matches);
+			System.out.println("There are " + Matches.size() + " matches in the ArrayList.");
+		
 		}
 	}
 }
