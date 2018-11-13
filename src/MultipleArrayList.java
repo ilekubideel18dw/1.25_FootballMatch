@@ -11,7 +11,7 @@ public class MultipleArrayList {
 	// Declare the ArrayList & the ListIterator.
 	ArrayList<FootballMatch> Matches = new ArrayList<FootballMatch>();
 
-	for (int y = 0, args.length - 1 >= y, y++) {
+	for (int y = 0; args.length - 1 >= y; y++) {
 		File file = new File(args[y]);
 		
 		try {
@@ -51,9 +51,11 @@ public class MultipleArrayList {
 		System.out.println("All matches:");
 					
 		System.out.println("There are " + data.size() + " ArrayLists.");
-				
-		for (int x = 0; data.size() - 1 >= x; x++) {
-			System.out.println(data.get(x).getLocalTeam() + " " + data.get(x).getGoalsLocal() + " vs " + data.get(x).getVisitorTeam() + " " + data.get(x).getGoalsVisitor());
-		}					
+
+		for (int n = 0; data.size() - 1 >= n; n++) {
+			for (int m = 0; data.get(n).size() - 1 >= m; m++)
+				System.out.println(((FootballMatch) data.get(n).get(m)).getLocalTeam() + " " + ((FootballMatch) data.get(n).get(m)).getGoalsLocal() + " - "
+				+ ((FootballMatch) data.get(n).get(m)).getGoalsVisitor() + " " + ((FootballMatch) data.get(n).get(m)).getVisitorTeam());
+		}
 	}
 }
