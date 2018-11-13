@@ -47,9 +47,6 @@ public class MultipleArrayList {
 					
 		}
 
-		// List of all the matches:
-		System.out.println("All matches:");
-					
 		System.out.println("There are " + data.size() + " ArrayLists.");
 
 		for (int n = 0; data.size() - 1 >= n; n++) {

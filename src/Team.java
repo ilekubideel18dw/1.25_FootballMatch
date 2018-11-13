@@ -2,6 +2,7 @@ public class Team {
 	
 	private String teamName;
 	private String teamCountry;
+	private String teamStadium;
 	private String teamLeague;
 	private int teamFoundationYear;
 	
@@ -26,6 +27,18 @@ public class Team {
 	public void setTeamCountry(String TeamCountry) {
 		
 		this.teamCountry = TeamCountry;
+		
+	}
+	
+	public String getTeamStadium() {
+		
+		return teamStadium;
+		
+	}
+
+	public void setTeamStadium(String TeamStadium) {
+		
+		this.teamStadium = TeamStadium;
 		
 	}
 

@@ -1,0 +1,7 @@
+Borussia Dortmund::Germany::Signal Iduna Park::Bundesliga::1909
+Real Sociedad::Spain::Anoeta::La Liga Santander::1909
+Manchester City::England::Etihad Stadium::Premier League::1880
+Tottenham::England::Wembley::Premier League::1882
+A.S.Roma::Italy::Stadio Olimpico::Serie A::1927
+Celta de Vigo::Spain::Balaidos::La Liga Santander::1923
+Zenit San Petesburg::Russia::Krestovski::Russian Premier League::1925
