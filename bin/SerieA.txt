@@ -1,0 +1,3 @@
+Juventus::Roma::2::2
+Inter::Fiorentina::1::3
+Napoli::Milan::1::1
