@@ -72,7 +72,7 @@ public class ReadTeams {
 					// Add all variables in the ArrayList.
 					footballteams.add(fteam);
 				}
-						
+					// footballteams.get(y).getTeamName() + " " + footballteams.get(y).getTeamCountry() + " " + footballteams.get(y).getTeamStadium() + " " + footballteams.get(y).getTeamLeague() + " " + footballteams.get(y).getTeamFoundationYear()
 			}
 
 			// The exception.
@@ -84,9 +84,18 @@ public class ReadTeams {
 			System.out.println("There are " + matches.size() + " matches.");
 			System.out.println("There are " + footballteams.size() + " teams.");
 		
-			/*for (int x = 0; matches.size() - 1 >= x; x++) {
-				System.out.println(matches.get(x).getLocalTeam() + " " + matches.get(x).getGoalsLocal() + " vs " + matches.get(x).getVisitorTeam() + " " + matches.get(x).getGoalsVisitor());
-			}*/
+			for (int x = 0; matches.size() - 1 >= x; x++) {
+				for (int y = 0; footballteams.size() - 1 >= y; y++) {
+					if (matches.get(x).getLocalTeam() == footballteams.get(y).getTeamName() || matches.get(x).getVisitorTeam() == footballteams.get(y).getTeamName()) {
+						System.out.println(footballteams.get(y).getTeamName() + " " + footballteams.get(y).getTeamCountry() 
+								+ " " + footballteams.get(y).getTeamStadium() + " " + footballteams.get(y).getTeamLeague() 
+								+ " " + footballteams.get(y).getTeamFoundationYear() + " " + matches.get(x).getGoalsLocal() 
+								+ " vs " + footballteams.get(y).getTeamName() + " " + footballteams.get(y).getTeamCountry() 
+								+ " " + footballteams.get(y).getTeamStadium() + " " + footballteams.get(y).getTeamLeague() 
+								+ " " + footballteams.get(y).getTeamFoundationYear() + " " + matches.get(x).getGoalsVisitor());
+					}
+				}
+			}
 		}
 	}
 } 

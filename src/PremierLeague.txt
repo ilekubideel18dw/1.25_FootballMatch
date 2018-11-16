@@ -1,3 +1,0 @@
-Manchester United::Tottenham::0::4
-Manchester City::Arsenal::5::0
-Chelsea::Liverpool::0::3
