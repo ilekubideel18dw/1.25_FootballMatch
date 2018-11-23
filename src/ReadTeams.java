@@ -7,7 +7,7 @@ public class ReadTeams {
 	public static void main(String[] args) {
 		
 		// Declare the ArrayLists.
-		ArrayList<FootballMatch> matches = new ArrayList<FootballMatch>();
+		ArrayList<Match> matches = new ArrayList<Match>();
 		ArrayList<Team> footballteams = new ArrayList<Team>();
 		
 		// Some lines to obligate the user to enter only two arguments.
@@ -61,7 +61,7 @@ public class ReadTeams {
 					String line = sc.nextLine();
 					String[] word = line.split("::");
 					
-					FootballMatch fmatch = new FootballMatch();	
+					Match fmatch = new Match();	
 					
 					// Add variable per variable in a variable.
 					
