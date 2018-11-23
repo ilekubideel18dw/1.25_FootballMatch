@@ -3,3 +3,5 @@ Borussia Dortmund::Tottenham::2::1
 Manchester City::Tottenham::3::3
 A.S.Roma::Zenit San Petesburg::1::1
 Celta de Vigo::Borussia Dortmund::0::4
+Racing Club Santander::Mirandés::0::6
+Reading::Swansea City::2::2

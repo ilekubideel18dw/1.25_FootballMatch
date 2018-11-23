@@ -5,3 +5,7 @@ Tottenham::England::Wembley::Premier League::1882
 A.S.Roma::Italy::Stadio Olimpico::Serie A::1927
 Celta de Vigo::Spain::Balaidos::La Liga Santander::1923
 Zenit San Petesburg::Russia::Krestovski::Russian Premier League::1925
+Racing Club Santander::Spain::El Sardinero::Segunda División B::1913
+Mirandés::Spain::Anduva::Segunda División B::1927
+Swansea City::Wales::Liberty Stadium::EFL Championship::1912
+Reading::England::Madejski Stadium::EFL Championship::1871
