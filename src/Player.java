@@ -2,6 +2,7 @@ public class Player {
 
 	private String playerName;
 	private String playerNationality;
+	private Team playerTeam;
 	private int playerAge;
 	private int playerNumber;
 
@@ -26,6 +27,18 @@ public class Player {
 	public void setPlayerNationality(String PlayerNationality) {
 		
 		this.playerNationality = PlayerNationality;
+		
+	}
+	
+	public Team getPlayerTeam() {
+		
+		return playerTeam;
+		
+    }
+
+	public void setPlayerTeam(Team PlayerTeam) {
+		
+		this.playerTeam = PlayerTeam;
 		
 	}
 

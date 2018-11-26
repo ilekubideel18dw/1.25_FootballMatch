@@ -1,0 +1,16 @@
+Marco Reus::Germany::Borussia Dortmund::29::11
+Paco Alcácer::Spain::Borussia Dortmund::25::9
+David Zurutuza::France::Real Sociedad::32::17
+Asier Illarramendi::Spain::Real Sociedad::28::4
+Kevin De Bruyne::Belgium::Manchester City::27::17
+Leroy Sané::Germany::Manchester City::22::19
+Harry Kane::England::Tottenham::25::10
+Dele Alli::England::Tottenham::22::20
+Edin Dzeko::Bosnia::A.S.Roma::32::9
+Stephan El Shaarawy::Italy::A.S.Roma::26::92
+aa::aa::Celta de Vigo::21::12
+ss::ww::Zenit San Petesburg::31::20
+qq:qq::Racing Club Santander::21::90
+ds::sa::Mirandés::21::11
+rw::qw::Swansea City::32::83
+er::ws::Reading::19::45
