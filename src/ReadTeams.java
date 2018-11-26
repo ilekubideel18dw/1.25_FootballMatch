@@ -54,7 +54,7 @@ public class ReadTeams {
 			try {
 				
 				// File = Argument & enter the file in Scanner.
-				File file = new File(args[0]);
+				File file = new File(args[1]);
 				Scanner sc = new Scanner(file);
 				
 				while(sc.hasNextLine()) {
@@ -91,6 +91,34 @@ public class ReadTeams {
 
 			// Quantity of matches & teams:			
 			System.out.println("There are " + matches.size() + " matches.");
+			
+			System.out.println("\n");
+			
+			for (int a = 0; a <= matches.size()-1; a++) {
+
+				System.out.println(matches.get(a).getLocalTeam().getTeamName() + " " + matches.get(a).getGoalsLocal() + " - "
+						+ matches.get(a).getGoalsVisitor() + " " + matches.get(a).getVisitorTeam().getTeamName());
+
+				System.out.println("\n");
+				
+				System.out.println("The local team: " + matches.get(a).getLocalTeam().getTeamName());
+				System.out.println("Country: " + matches.get(a).getLocalTeam().getTeamCountry());
+				System.out.println("Stadium: " + matches.get(a).getLocalTeam().getTeamStadium());
+				System.out.println("League: " + matches.get(a).getLocalTeam().getTeamLeague());
+				System.out.println("Foundation Year: " + matches.get(a).getLocalTeam().getTeamFoundationYear());
+				
+				System.out.println("\n");
+				
+				System.out.println("The visitor team: " + matches.get(a).getVisitorTeam().getTeamName());
+				System.out.println("Country: " + matches.get(a).getVisitorTeam().getTeamCountry());
+				System.out.println("Stadium: " + matches.get(a).getVisitorTeam().getTeamStadium());
+				System.out.println("League: " + matches.get(a).getVisitorTeam().getTeamLeague());
+				System.out.println("Foundation Year: " + matches.get(a).getVisitorTeam().getTeamFoundationYear());
+				
+				System.out.println("\n");
+				System.out.println("--------------------------------------------------------------");
+				System.out.println("\n");
+			}
 		}
 	}
 } 
